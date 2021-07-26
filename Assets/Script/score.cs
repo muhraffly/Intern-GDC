@@ -20,6 +20,7 @@ public class score : MonoBehaviour
         
     }
 
+    // Ketika collision dengan coin
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("coin"))

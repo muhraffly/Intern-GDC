@@ -9,10 +9,12 @@ public class playerMovement : MonoBehaviour
     public int jumpCount, jumpValue;
 
     public bool isGrounded = true;
+    private Animator anim;
 
     void Start()
     {
         scaleX = transform.localScale.x;
+        anim = GetComponent<Animator>();
     }
 
     public void berlari()
@@ -36,6 +38,7 @@ public class playerMovement : MonoBehaviour
         {
             melompat();
         }
+
         if (isGrounded)
         {
             jumpCount = jumpValue;

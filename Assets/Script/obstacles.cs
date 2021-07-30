@@ -10,7 +10,7 @@ public class obstacles : MonoBehaviour
     void Start()
     {
         kecepatan = 0.020f;
-        Yobstacles = Random.Range(-2, 1);
+        Yobstacles = Random.Range(-3, 0);
     }
 
     // Update is called once per frame

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class obstaclesSpawn : MonoBehaviour
 {
+    public float waktuMin, waktuMax;
     public GameObject obstacles;
     // Start is called before the first frame update
     void Start()

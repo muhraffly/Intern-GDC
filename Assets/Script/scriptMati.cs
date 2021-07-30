@@ -15,5 +15,11 @@ public class scriptMati : MonoBehaviour
             matiUI.text = "Kamu terlindas batu";
             restartUI.text = "Tekan R buat restart";
         }
+        if (collision.collider.CompareTag("Obstacle"))
+        {
+            Time.timeScale = 0;
+            matiUI.text = "Kamu tertabrak batu";
+            restartUI.text = "Tekan R buat restart";
+        }
     }
 }

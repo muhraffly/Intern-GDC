@@ -5,10 +5,13 @@ using UnityEngine.UI;
 
 public class playerMovement : MonoBehaviour
 {
-    public float speed, scaleX, lompat;
-    public int jumpCount, jumpValue;
+    private float speed = 0f;
+    private float scaleX = 0f;
+    private float lompat = 9f;
+    private float jumpCount = 0f;
+    private float jumpValue = 2f;
 
-    public bool isGrounded = true;
+    private bool isGrounded = true;
     private Animator anim;
 
     void Start()
@@ -30,6 +33,15 @@ public class playerMovement : MonoBehaviour
         jumpCount--;
     }
 
+    public void merunduk()
+    {
+        if (Input.GetKey(KeyCode.DownArrow) && isGrounded) {
+            GetComponent<PolygonCollider2D>().enabled = false;
+        } else {
+            GetComponent<PolygonCollider2D>().enabled = true;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -38,6 +50,7 @@ public class playerMovement : MonoBehaviour
         {
             melompat();
         }
+        merunduk();
 
         if (isGrounded)
         {
@@ -47,7 +60,7 @@ public class playerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!isGrounded)
+        if (collision.collider.tag == "Ground" && !isGrounded)
         {
             isGrounded = true;
 

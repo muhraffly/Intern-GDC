@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class scoreJarakperSec : MonoBehaviour
 {
     public Text scoreJarak;
-    public float scoreAmount;
-    public float poinMeningkatPerDetik;
+    public float scoreAmount = 0f;
+    private float poinMeningkatPerDetik = 100f;
     // Start is called before the first frame update
     void Start()
     {

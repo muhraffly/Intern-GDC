@@ -3,31 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class score : MonoBehaviour
+public class scoreCoin : MonoBehaviour
 {
-    public float scoreCoin;
-
+    public float scorecoin;
     public Text scoreUI;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (Time.timeScale == 0)
+        {
+            scorecoin = PlayerPrefs.GetFloat("coins");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+ 
     }
 
     // Ketika collision dengan coin
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("coin"))
         {
-            scoreCoin += 1;
-            scoreUI.text = scoreCoin.ToString();
+            scorecoin += 1;
+            scoreUI.text = scorecoin.ToString();
             Destroy(collision.collider.gameObject);
+            PlayerPrefs.SetFloat("coins", scorecoin);
         }
     }
 }

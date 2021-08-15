@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class scriptMati : MonoBehaviour
 {
+    public GameObject mati;
     public Text matiUI;
     public Text restartUI;
     public void OnCollisionEnter2D(Collision2D collision)
@@ -18,8 +19,7 @@ public class scriptMati : MonoBehaviour
         if (collision.collider.CompareTag("Obstacle"))
         {
             Time.timeScale = 0;
-            matiUI.text = "Kamu tertabrak batu";
-            restartUI.text = "Tekan R buat restart";
+            mati.SetActive(true);
         }
     }
 }

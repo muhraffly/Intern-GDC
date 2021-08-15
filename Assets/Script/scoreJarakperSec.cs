@@ -13,12 +13,17 @@ public class scoreJarakperSec : MonoBehaviour
     {
         scoreAmount = 0f;
         //poinMeningkatPerDetik = 1.7f;
+        if (Time.timeScale == 0)
+        {
+            scoreAmount = PlayerPrefs.GetFloat("jarak");
+        }
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update ()
     {
         scoreJarak.text = (int)scoreAmount + "m";
         scoreAmount += poinMeningkatPerDetik * Time.deltaTime;
+        PlayerPrefs.SetFloat("jarak", scoreAmount);
     }
 }

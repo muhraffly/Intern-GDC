@@ -5,7 +5,12 @@ using UnityEngine;
 public class obstacles : MonoBehaviour
 {
     float Yobstacles;
-    public float kecepatan;
+    public float kecepatan = 0.020f;
+    
+
+    void increaseSpeed() {
+        kecepatan = kecepatan + 0.005f;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +25,8 @@ public class obstacles : MonoBehaviour
         {
             transform.localPosition = new Vector3(transform.localPosition.x - kecepatan, Yobstacles, 1f);
         }
+        if (transform.position.x < -20.05){
+            Destroy(transform.gameObject);
+        } 
     }
 }

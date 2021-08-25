@@ -168,9 +168,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.42857143
-    functionName: copy
+    functionName: spawnObject
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 4105442890551538878, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

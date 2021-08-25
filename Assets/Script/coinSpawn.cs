@@ -15,7 +15,7 @@ public class coinSpawn : MonoBehaviour
 
     }
 
-    void spawnCoin()
+    void spawnObject()
     {
         Instantiate(coins, transform.position, transform.rotation);
     }
@@ -34,7 +34,7 @@ public class coinSpawn : MonoBehaviour
         }
         else
         {
-            spawnCoin();
+            spawnObject();
             currentTimeToSpawn = timeToSpawn;
         }
     }

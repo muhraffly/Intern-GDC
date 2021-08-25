@@ -239,6 +239,7 @@ MonoBehaviour:
   - {fileID: 4105442890551538878, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
   isRandomized: 1
   timeToSpawn: 2
+  canSpawnCoin: 1
 --- !u!95 &41964500
 Animator:
   serializedVersion: 3
@@ -249,7 +250,7 @@ Animator:
   m_GameObject: {fileID: 41964498}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 807b5e5c86d3cf2428217fbe485f3225, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2821,6 +2822,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: {fileID: 4115054619987812710, guid: c22a24915b941d54d8c14a48be84b6ee, type: 3}
+  timeToSpawn: 0.5
+  spawner: {fileID: 0}
 --- !u!95 &1427668820
 Animator:
   serializedVersion: 3
@@ -2831,7 +2834,7 @@ Animator:
   m_GameObject: {fileID: 1427668818}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 807b5e5c86d3cf2428217fbe485f3225, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

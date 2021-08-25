@@ -234,7 +234,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waktuMin: 0
   waktuMax: 0
-  obstacles: {fileID: 4105442890551538878, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+  obstacles:
+  - {fileID: 1619265452235400329, guid: 09755a802216824488b71952636aa55a, type: 3}
+  - {fileID: 4105442890551538878, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+  isRandomized: 1
+  timeToSpawn: 2
 --- !u!95 &41964500
 Animator:
   serializedVersion: 3

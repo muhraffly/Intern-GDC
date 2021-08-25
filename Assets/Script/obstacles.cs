@@ -5,17 +5,12 @@ using UnityEngine;
 public class obstacles : MonoBehaviour
 {
     float Yobstacles;
-    public float kecepatan = 0.020f;
-    
-
-    void increaseSpeed() {
-        kecepatan = kecepatan + 0.005f;
-    }
+    public float kecepatan;
     // Start is called before the first frame update
     void Start()
     {
         kecepatan = 0.020f;
-        Yobstacles = Random.Range(-3, 0);
+        Yobstacles = transform.position.y;
     }
 
     // Update is called once per frame

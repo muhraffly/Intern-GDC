@@ -19,7 +19,7 @@ public class coins : MonoBehaviour
         {
             transform.localPosition = new Vector3(transform.localPosition.x - kecepatan, Ycoin, 1f);
         }
-        if (transform.position.x < -20.05){
+        if (transform.position.x < -10){
             Destroy(transform.gameObject);
         } 
     }

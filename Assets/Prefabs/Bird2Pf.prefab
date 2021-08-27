@@ -8,20 +8,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4105442890551538872, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b06f679467c629b44bd055dd42e05d14, type: 3}
+    - target: {fileID: 4105442890551538872, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
       propertyPath: m_Color.b
-      value: 0.21422087
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4105442890551538872, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
       propertyPath: m_Color.g
-      value: 0.54901963
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4105442890551538872, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
       propertyPath: m_Color.r
-      value: 0.19999997
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4105442890551538873, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105442890551538873, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105442890551538873, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 4105442890551538873, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29,7 +41,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4105442890551538873, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.35
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4105442890551538873, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -65,7 +77,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4105442890551538878, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
       propertyPath: m_Name
-      value: obstacles (1) Variant
+      value: Bird2Pf
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105442890551538879, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 18.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105442890551538879, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 17.74
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}

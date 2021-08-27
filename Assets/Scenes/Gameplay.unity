@@ -236,6 +236,9 @@ MonoBehaviour:
   waktuMax: 0
   obstacles:
   - {fileID: 4105442890551538878, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+  - {fileID: 1619265452235400329, guid: 09755a802216824488b71952636aa55a, type: 3}
+  - {fileID: 1619265452235400329, guid: 2d0d509d56c7fb144aca5f888a470958, type: 3}
+  - {fileID: 1619265452235400329, guid: a67c6aa5ed6a35349b717ed2533f6b0d, type: 3}
   isRandomized: 1
   timeToSpawn: 2
   canSpawnCoin: 1

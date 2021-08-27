@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4115054619987812705}
   - component: {fileID: 4115054619987812706}
   - component: {fileID: 4115054619987812707}
+  - component: {fileID: 5823747640337683118}
   m_Layer: 0
   m_Name: coin
   m_TagString: coin
@@ -113,3 +114,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kecepatan: 4.2
+--- !u!95 &5823747640337683118
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4115054619987812710}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: abd0dc168cfc8654fafecbe8cf406760, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

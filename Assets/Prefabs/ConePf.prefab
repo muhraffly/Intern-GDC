@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4105442890551538879}
   - component: {fileID: 6571020559058746093}
   m_Layer: 0
-  m_Name: obstacles
+  m_Name: ConePf
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4105442890551538878}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.74, y: -2.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 16.74, y: -4, z: 0}
+  m_LocalScale: {x: 0.08, y: 0.08, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: 1464048997
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.5471698, g: 0.19959651, b: 0.19959651, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 293bb7aac7f826c448651a416328c696, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -97,18 +97,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.027608871, y: -0.096630216}
+  m_Offset: {x: -0.28892362, y: -0.6926079}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 17.72, y: 17.72}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9337387, y: 0.80673957}
+  m_Size: {x: 8.100863, y: 15.19791}
   m_EdgeRadius: 0
 --- !u!114 &6571020559058746093
 MonoBehaviour:
@@ -122,5 +122,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de2ba55d08eb6e84abf63551af1694d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ycoin: 0
   kecepatan: 4.2

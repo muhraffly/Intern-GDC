@@ -7,7 +7,7 @@ public class playerMovement : MonoBehaviour
 {
     private float speed = 0f;
     private float scaleX = 0f;
-    private float lompat = 9f;
+    private float lompat = 12f;
     private float jumpCount = 0f;
     private float jumpValue = 2f;
 

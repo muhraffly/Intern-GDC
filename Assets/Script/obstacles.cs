@@ -20,7 +20,7 @@ public class obstacles : MonoBehaviour
         {
             transform.localPosition = new Vector3(transform.localPosition.x - kecepatan, Yobstacles, 1f);
         }
-        if (transform.position.x < -20.05){
+        if (transform.position.x < -10){
             Destroy(transform.gameObject);
         } 
     }

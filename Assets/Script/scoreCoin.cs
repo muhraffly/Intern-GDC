@@ -23,13 +23,13 @@ public class scoreCoin : MonoBehaviour
     }
 
     // Ketika collision dengan coin
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.collider.CompareTag("coin"))
+        if (other.gameObject.CompareTag("coin"))
         {
             scorecoin += 1;
             scoreUI.text = scorecoin.ToString();
-            Destroy(collision.collider.gameObject);
+            Destroy(other.gameObject);
             PlayerPrefs.SetFloat("coins", scorecoin);
         }
     }

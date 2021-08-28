@@ -9,7 +9,7 @@ public class playerMovement : MonoBehaviour
     private float scaleX = 0f;
     private float lompat = 9f;
     private float jumpCount = 0f;
-    private float jumpValue = 3f;
+    private float jumpValue = 2f;
 
     private bool isGrounded = true;
     private Animator anim;

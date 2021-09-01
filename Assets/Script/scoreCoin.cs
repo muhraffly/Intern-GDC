@@ -7,13 +7,11 @@ public class scoreCoin : MonoBehaviour
 {
     public float scorecoin;
     public Text scoreUI;
+    public Text displayCoin;
     // Start is called before the first frame update
     void Start()
     {
-        if (Time.timeScale == 0)
-        {
-            scorecoin = PlayerPrefs.GetFloat("coins");
-        }
+
     }
 
     // Update is called once per frame
@@ -29,8 +27,8 @@ public class scoreCoin : MonoBehaviour
         {
             scorecoin += 1;
             scoreUI.text = scorecoin.ToString();
+            displayCoin.text = scorecoin.ToString();
             Destroy(other.gameObject);
-            PlayerPrefs.SetFloat("coins", scorecoin);
         }
     }
 }

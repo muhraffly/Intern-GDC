@@ -27,14 +27,6 @@ public class pauseMenu : MonoBehaviour
         SceneManager.LoadScene(startMenu);
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Obstacle"))
-        {
-            pausebtn.enabled = false;
-        }
-    }
-
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             pause();

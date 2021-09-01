@@ -5,11 +5,11 @@ using UnityEngine;
 public class obstacles : MonoBehaviour
 {
     float Yobstacles;
-    public float kecepatan;
+    private float kecepatan;
     // Start is called before the first frame update
     void Start()
     {
-        kecepatan = 0.020f;
+        kecepatan = .02f;
         Yobstacles = transform.position.y;
     }
 

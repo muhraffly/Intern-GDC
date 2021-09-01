@@ -19,6 +19,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &7849859458771446960
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619265452235400329}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.9031928, y: 0.15053153}
+  serializedVersion: 2
+  m_Radius: 5.044555
 --- !u!1001 &3351170531326398519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99,6 +115,30 @@ PrefabInstance:
       value: Bird2Pf
       objectReference: {fileID: 0}
     - target: {fileID: 4105442890551538879, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+      propertyPath: m_Size.x
+      value: 10.107929
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105442890551538879, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+      propertyPath: m_Size.y
+      value: 5.3631544
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105442890551538879, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105442890551538879, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+      propertyPath: m_Offset.x
+      value: -1.2924566
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105442890551538879, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.19083548
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105442890551538879, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105442890551538879, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 18.82
       objectReference: {fileID: 0}
@@ -106,7 +146,9 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 17.74
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2654545468655132313, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
+    - {fileID: 7432499465437396135, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 784e496a9c179df41a0c9a46a46ff9f4, type: 3}
 --- !u!1 &1619265452235400329 stripped
 GameObject:

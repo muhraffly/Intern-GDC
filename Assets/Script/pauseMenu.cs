@@ -34,4 +34,10 @@ public class pauseMenu : MonoBehaviour
             pausebtn.enabled = false;
         }
     }
+
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            pause();
+        }
+    }
 }

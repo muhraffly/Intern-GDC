@@ -5,11 +5,11 @@ using UnityEngine;
 public class coins : MonoBehaviour
 {
     float Ycoin;
-    public float kecepatan;
+    private float kecepatan;
     // Start is called before the first frame update
     void Start()
     {
-        kecepatan = 0.020f;
+        kecepatan = .02f;
         Ycoin = Random.Range(-2, 0);
     }
     // Update is called once per frame

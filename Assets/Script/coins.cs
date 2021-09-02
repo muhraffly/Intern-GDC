@@ -9,7 +9,7 @@ public class coins : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        kecepatan = .02f;
+        kecepatan = 0.15f;
         Ycoin = Random.Range(-2, 0);
     }
     // Update is called once per frame

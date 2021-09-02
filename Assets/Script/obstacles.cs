@@ -9,7 +9,7 @@ public class obstacles : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        kecepatan = .02f;
+        kecepatan = 0.15f;
         Yobstacles = transform.position.y;
     }
 

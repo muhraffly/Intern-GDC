@@ -13,7 +13,7 @@ public class startMenu : MonoBehaviour
     public void exit()
     {
         Application.Quit();
-        Debug.Log("Bisa Exit Game");
+        //Debug.Log("Bisa Exit Game");
     }
 
     public void backMenu(string startMenu)

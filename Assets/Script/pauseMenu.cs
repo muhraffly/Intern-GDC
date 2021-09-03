@@ -28,8 +28,16 @@ public class pauseMenu : MonoBehaviour
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            pause();
+        if (Time.timeScale == 1f)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                pause();
+            }
+       else
+            {
+
+            }
         }
     }
 }

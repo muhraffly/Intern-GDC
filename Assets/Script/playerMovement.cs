@@ -28,7 +28,7 @@ public class playerMovement : MonoBehaviour
 
     public void melompat()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow) && jumpCount > 0) {
+        if (Input.GetKeyDown(KeyCode.UpArrow) && jumpCount > 0 && Time.timeScale == 1f) {
             GetComponent<Rigidbody2D>().velocity = Vector2.up * lompat;
             isGrounded = false;
             jumpCount--;
@@ -42,7 +42,7 @@ public class playerMovement : MonoBehaviour
 
     public void merunduk()
     {
-        if (Input.GetKey(KeyCode.DownArrow) && isGrounded) {
+        if (Input.GetKey(KeyCode.DownArrow) && isGrounded && Time.timeScale == 1f) {
             GetComponent<PolygonCollider2D>().enabled = false;
             anim.SetBool("isSliding", true);
         } else {

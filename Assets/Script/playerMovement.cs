@@ -14,6 +14,8 @@ public class playerMovement : MonoBehaviour
     private bool isGrounded = true;
     private Animator anim;
 
+    
+
     void Start()
     {
         scaleX = transform.localScale.x;
@@ -33,6 +35,8 @@ public class playerMovement : MonoBehaviour
             isGrounded = false;
             jumpCount--;
             anim.SetBool("isJumping", true);
+            FindObjectOfType<AudioManager>().Play("jumpEffect");
+            GetComponent<BoxCollider2D>().enabled = false;
         }
         else
         {
@@ -45,6 +49,8 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.DownArrow) && isGrounded && Time.timeScale == 1f) {
             GetComponent<PolygonCollider2D>().enabled = false;
             anim.SetBool("isSliding", true);
+            GetComponent<BoxCollider2D>().enabled = true;
+            FindObjectOfType<AudioManager>().Play("slidingSound");
         } else {
             GetComponent<PolygonCollider2D>().enabled = true;
             anim.SetBool("isSliding", false);
@@ -69,6 +75,7 @@ public class playerMovement : MonoBehaviour
         if (collision.collider.tag == "Ground" && !isGrounded)
         {
             isGrounded = true;
+            GetComponent<BoxCollider2D>().enabled = true;
 
         }
     }

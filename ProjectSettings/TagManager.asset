@@ -4,10 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - stone
   - Ground
   - Obstacle
-  - coin
+  - coins
+  - polisi
   layers:
   - Default
   - TransparentFX

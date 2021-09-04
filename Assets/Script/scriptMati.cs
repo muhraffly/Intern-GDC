@@ -8,7 +8,6 @@ public class scriptMati : MonoBehaviour
 {
     public GameObject mati;
 
-
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Obstacle"))
@@ -16,6 +15,10 @@ public class scriptMati : MonoBehaviour
             GetComponent<Animator>().SetBool("isHit", true);
             Time.timeScale = 0;
             mati.SetActive(true);
+            FindObjectOfType<AudioManager>().Play("deathEffect");
+            FindObjectOfType<AudioManager>().Stop("backsoundGame");
+            FindObjectOfType<AudioManager>().Play("deathSound");
+
         }
           
     }

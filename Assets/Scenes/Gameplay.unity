@@ -199,6 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac4a2eef0e300042a446813fbb4ac99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  control: {fileID: 0}
+  tutorial: {fileID: 0}
 --- !u!114 &8139438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,14 +210,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8139434}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fcd7a45a89083643b4e853e04f576d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 92ac17dc035c8a246a33c55c196aa172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreAmount: 0
   poinMeningkatPerDetik: 100
   totalScore: 0
   scorecoin: 0
-  scoreUI: {fileID: 1944787142}
+  scoreUI: {fileID: 591974459}
   displayCoin: {fileID: 1902484293}
   totalUI: {fileID: 967414261}
   scoreJarak: {fileID: 105771209}
@@ -652,7 +654,7 @@ GameObject:
   - component: {fileID: 485932013}
   m_Layer: 0
   m_Name: polisi
-  m_TagString: Untagged
+  m_TagString: polisi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -961,6 +963,18 @@ MonoBehaviour:
       - m_Target: {fileID: 8139436}
         m_TargetAssemblyTypeName: restart, Assembly-CSharp
         m_MethodName: restartgame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 701884973}
+        m_TargetAssemblyTypeName: buttonSound, Assembly-CSharp
+        m_MethodName: creditsBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1339,6 +1353,18 @@ MonoBehaviour:
           m_StringArgument: startMenu
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 701884973}
+        m_TargetAssemblyTypeName: buttonSound, Assembly-CSharp
+        m_MethodName: creditsBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &687271758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1452,6 +1478,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700274428}
   m_CullTransparentMesh: 1
+--- !u!1 &701884972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 701884974}
+  - component: {fileID: 701884973}
+  m_Layer: 0
+  m_Name: buttonSoundEff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &701884973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701884972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2525b8af96be4544b9025dbb3dc90659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &701884974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701884972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.1489854, y: -2.21905, z: -5.0297747}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &721289672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,6 +1607,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: pauseMenu, Assembly-CSharp
         m_MethodName: home
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 701884973}
+        m_TargetAssemblyTypeName: buttonSound, Assembly-CSharp
+        m_MethodName: creditsBtn
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1932,6 +2013,18 @@ MonoBehaviour:
       - m_Target: {fileID: 898504274}
         m_TargetAssemblyTypeName: pauseMenu, Assembly-CSharp
         m_MethodName: pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 701884973}
+        m_TargetAssemblyTypeName: buttonSound, Assembly-CSharp
+        m_MethodName: creditsBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2421,6 +2514,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 701884973}
+        m_TargetAssemblyTypeName: buttonSound, Assembly-CSharp
+        m_MethodName: creditsBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1366764504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2889,9 +2994,9 @@ GameObject:
   - component: {fileID: 1954064260}
   - component: {fileID: 1954064261}
   - component: {fileID: 1954064264}
-  - component: {fileID: 1954064262}
   - component: {fileID: 1954064257}
   - component: {fileID: 1954064265}
+  - component: {fileID: 1954064262}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3113,7 +3218,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 5
 --- !u!114 &1954064259
 MonoBehaviour:
@@ -3161,7 +3266,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1954064253}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fcd7a45a89083643b4e853e04f576d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 92ac17dc035c8a246a33c55c196aa172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreAmount: 0
@@ -3179,13 +3284,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954064253}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.7635338, y: -1.4027035}
+  m_Offset: {x: -0.78443813, y: -2.1053605}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3196,7 +3301,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.018495, y: 1.6146932}
+  m_Size: {x: 4.589548, y: 0.8716092}
   m_EdgeRadius: 0
 --- !u!114 &1954064265
 MonoBehaviour:
@@ -3243,7 +3348,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.07910195}
+  m_Offset: {x: 0, y: 0.08902396}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3254,7 +3359,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.1582038}
+  m_Size: {x: 1, y: 1.1780477}
   m_EdgeRadius: 0
 --- !u!212 &2019379376
 SpriteRenderer:

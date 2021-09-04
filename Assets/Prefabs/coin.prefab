@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5823747640337683118}
   m_Layer: 0
   m_Name: coin
-  m_TagString: coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1efb430d45afe844582ab5a5125fd3da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kecepatan: 4.2
 --- !u!95 &5823747640337683118
 Animator:
   serializedVersion: 3

@@ -25,6 +25,9 @@ public class pauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(startMenu);
+        FindObjectOfType<AudioManager>().Stop("backsoundGame");
+        FindObjectOfType<AudioManager>().Play("backsoundMenu");
+        
     }
 
     private void Update() {
@@ -33,6 +36,7 @@ public class pauseMenu : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 pause();
+                FindObjectOfType<AudioManager>().Play("buttonEff");
             }
        else
             {

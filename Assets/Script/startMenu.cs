@@ -11,8 +11,8 @@ public class startMenu : MonoBehaviour
     {
         Application.LoadLevel(Gameplay);
         Time.timeScale = 1;
-        FindObjectOfType<AudioManager>().Stop("backsoundMenu");
         FindObjectOfType<AudioManager>().Play("backsoundGame");
+        FindObjectOfType<AudioManager>().Play("sirine");
 
 
     }
@@ -25,8 +25,8 @@ public class startMenu : MonoBehaviour
     public void backMenu(string startMenu)
     {
         Application.LoadLevel(startMenu);
-        FindObjectOfType<AudioManager>().Stop("backsoundGame");
-        FindObjectOfType<AudioManager>().Play("backsoundMenu");
+        FindObjectOfType<AudioManager>().Stop("sirine");
+        FindObjectOfType<AudioManager>().Play("backsoundGame");
         FindObjectOfType<AudioManager>().Stop("deathSound");
 
     }

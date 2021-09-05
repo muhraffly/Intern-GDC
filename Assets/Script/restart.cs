@@ -10,7 +10,8 @@ public class restart : MonoBehaviour
             Time.timeScale = 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             FindObjectOfType<AudioManager>().Play("backsoundGame");
-        FindObjectOfType<AudioManager>().Stop("deathSound");
+            FindObjectOfType<AudioManager>().Play("sirine");
+            FindObjectOfType<AudioManager>().Stop("deathSound");
 
     }
 

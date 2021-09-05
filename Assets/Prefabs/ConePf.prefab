@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4105442890551538872}
   - component: {fileID: 6571020559058746093}
   - component: {fileID: 7432499465437396135}
+  - component: {fileID: 6831639721991841706}
   m_Layer: 0
   m_Name: ConePf
   m_TagString: Obstacle
@@ -375,3 +376,22 @@ PolygonCollider2D:
       - {x: 0.19, y: -7.6699996}
       - {x: 0.26999998, y: -7.6499996}
       - {x: 0.35, y: -7.62}
+--- !u!95 &6831639721991841706
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4105442890551538878}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ddf0b76a353e024eae33123f28ac282, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

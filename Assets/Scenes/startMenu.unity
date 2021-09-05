@@ -2863,20 +2863,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: backsoundMenu
-    clip: {fileID: 8300000, guid: 3f0e0060af436d2428c2278c4488f43e, type: 3}
+  - name: backsoundGame
+    clip: {fileID: 8300000, guid: d3aa1d70d2c3a41409616896f4a28acc, type: 3}
     volume: 0.365
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: jumpEffect
     clip: {fileID: 8300000, guid: a5cdfb18bffc1b445bcf6fc5c05ace14, type: 3}
-    volume: 0.758
+    volume: 0.23
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: backsoundGame
-    clip: {fileID: 8300000, guid: f2c0604390a9f6c47aa219b6dc894954, type: 3}
+  - name: sirine
+    clip: {fileID: 8300000, guid: 4ea12296931e24c43997cd7d97dbc9c7, type: 3}
     volume: 0.36
     pitch: 1
     loop: 1
@@ -2894,7 +2894,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: deathSound
-    clip: {fileID: 8300000, guid: dc86f02ee7b4a3f43b0e662d11335a32, type: 3}
+    clip: {fileID: 8300000, guid: b3ca40de8bd4c2043996d3acb3e5665d, type: 3}
     volume: 1
     pitch: 1
     loop: 0

@@ -17,6 +17,7 @@ public class scriptMati : MonoBehaviour
             mati.SetActive(true);
             FindObjectOfType<AudioManager>().Play("deathEffect");
             FindObjectOfType<AudioManager>().Stop("backsoundGame");
+            FindObjectOfType<AudioManager>().Stop("sirine");
             FindObjectOfType<AudioManager>().Play("deathSound");
 
         }

@@ -42,11 +42,12 @@ public class Scoring : MonoBehaviour
             scoreUI.text = scorecoin.ToString();
             displayCoin.text = scorecoin.ToString();
             Destroy(other.gameObject);
-
+            
             totalScore = (int)scorecoin * 50;
             totalUI.text = ((int)totalScore + (int)scoreAmount).ToString() + " pts";
             
         }
+
     }
 
 }

@@ -25,8 +25,8 @@ public class pauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(startMenu);
-        FindObjectOfType<AudioManager>().Stop("backsoundGame");
-        FindObjectOfType<AudioManager>().Play("backsoundMenu");
+        FindObjectOfType<AudioManager>().Play("backsoundGame");
+        FindObjectOfType<AudioManager>().Stop("sirine");
         
     }
 

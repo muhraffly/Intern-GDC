@@ -38,7 +38,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        Play("backsoundMenu");
+        Play("backsoundGame");
     }
 
     public void Play(string name)

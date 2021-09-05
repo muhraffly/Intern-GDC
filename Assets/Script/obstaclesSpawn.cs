@@ -37,7 +37,7 @@ public class obstaclesSpawn : MonoBehaviour
             SpawnObject();
             canSpawnCoin = false;
             obstacleCount += 1f;
-            if(obstacleCount % 3f == 0f && obstacleCount <= 18f && obstacleCount != 0f){
+            if(obstacleCount % 3f == 0f && obstacleCount <= 21f && obstacleCount != 0f){
                 timeToSpawn -= .2f;
             }
             currentTimeToSpawn = timeToSpawn;

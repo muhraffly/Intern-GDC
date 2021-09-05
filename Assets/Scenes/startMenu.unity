@@ -2900,13 +2900,13 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: slidingSound
-    clip: {fileID: 8300000, guid: 8f349b50176aeb849b53652fe658578c, type: 3}
+    clip: {fileID: 8300000, guid: 606f6b0a2554465489686b715df580e2, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: buttonEff
-    clip: {fileID: 8300000, guid: 6017e4e7c60501a40b9b6f29d70ccf3c, type: 3}
+    clip: {fileID: 8300000, guid: 43c2cfb28f6de144cb2a0ab83e93973d, type: 3}
     volume: 0.699
     pitch: 1
     loop: 0

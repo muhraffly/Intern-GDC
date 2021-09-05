@@ -2865,7 +2865,7 @@ MonoBehaviour:
   sounds:
   - name: backsoundGame
     clip: {fileID: 8300000, guid: d3aa1d70d2c3a41409616896f4a28acc, type: 3}
-    volume: 0.365
+    volume: 0.25
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -2877,7 +2877,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: sirine
     clip: {fileID: 8300000, guid: 4ea12296931e24c43997cd7d97dbc9c7, type: 3}
-    volume: 0.36
+    volume: 0.25
     pitch: 1
     loop: 1
     source: {fileID: 0}
